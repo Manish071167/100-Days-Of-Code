@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main() {
+    int n, i, j;
+
+    printf("Enter size of array: ");
+    scanf("%d", &n);
+
+    int a[n], ans[n];
+
+    printf("Enter %d elements: ", n);
+    for (i = 0; i < n; i++) {
+        scanf("%d", &a[i]);
+    }
+
+    for (i = 0; i < n; i++) {
+        int prod = 1;
+        for (j = 0; j < n; j++) {
+            if (j != i) {
+                prod *= a[j];
+            }
+        }
+        ans[i] = prod;
+    }
+
+    printf("Product array: ");
+    for (i = 0; i < n; i++) {
+        printf("%d ", ans[i]);
+    }
+    printf("\n");
+
+    return 0;
+}

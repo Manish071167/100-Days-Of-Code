@@ -1,0 +1,5 @@
+mohith 1 9.00
+ratna 2 123.00
+venkat 4 13.00
+sana 4 54.00
+mr 5 98.00
