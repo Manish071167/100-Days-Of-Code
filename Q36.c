@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+{
+    int num1, num2, hcf, remainder, a, b;
+    printf("Enter two numbers: ");
+    scanf("%d %d", &num1, &num2);
+    a = num1;
+    b = num2;
+    while (b != 0)
+    {
+        remainder = a % b;
+        a = b;
+        b = remainder;
+    }
+    hcf = a;
+    printf("HCF (GCD) of %d and %d is: %d\n", num1, num2, hcf);
+    return 0;
+}
